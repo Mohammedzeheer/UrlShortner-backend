@@ -7,6 +7,7 @@ const userJwt=require('../middleware/jwtUser')
 
 userRouter.get('/getUrl',userJwt,urlController.getUrl)
 userRouter.post('/save',userJwt,urlController.SaveUrl)
+userRouter.delete('/deleteUrl/:urlId', userJwt, urlController.deleteUrl);
 
 userRouter.post('/userRegister', userController.userLogin)
 

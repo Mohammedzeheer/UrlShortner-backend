@@ -8,7 +8,7 @@ const shortUrlCollection=require('./models/shortUrlModel')
 app.use(
     cors({
       origin: process.env.CLIENT_SIDE_URL,
-      methods: ['GET', 'POST'],
+      methods: ['GET', 'POST','DELETE'],
       credentials: true,
     })
   );
